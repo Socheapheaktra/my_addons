@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+sheet_music_user_access,Sheet Music User,model_sheet_music,group_sheet_music_user,1,0,0,0
+sheet_music_admin_access,Sheet Music Admin,model_sheet_music,group_sheet_music_administrator,1,1,1,1
+
+music_composer_user_access,Music Composer User,model_music_composer,group_sheet_music_user,1,0,0,0
+music_composer_admin_access,Music Composer Admin,model_music_composer,group_sheet_music_administrator,1,1,1,1
+
+music_category_user_access,Music Category User,model_music_category,group_sheet_music_user,1,0,0,0
+music_category_admin_access,Music Category Admin,model_music_category,group_sheet_music_administrator,1,1,1,1

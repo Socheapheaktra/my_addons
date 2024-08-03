@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="sheet_music_menu_root" name="Sheet Music" sequence="1" action="sheet_music_action" groups="group_sheet_music_user">
+        <menuitem id="sheet_music_menu" name="Sheet Music" action="sheet_music_action" sequence="1"/>
+        <menuitem id="sheet_music_menu_category" name="Other" sequence="2" groups="group_sheet_music_administrator">
+            <menuitem id="music_composer_menu" name="Composer" action="music_composer_action" sequence="1"/>
+            <menuitem id="music_category_menu" name="Category" action="music_category_action" sequence="2"/>
+        </menuitem>
+    </menuitem>
+
+</odoo>

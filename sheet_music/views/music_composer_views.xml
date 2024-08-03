@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="music_composer_view_tree" model="ir.ui.view">
+        <field name="name">music_composer_view_tree</field>
+        <field name="model">music.composer</field>
+        <field name="arch" type="xml">
+            <tree string="music_composer_tree">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record id="music_composer_view_form" model="ir.ui.view">
+        <field name="name">music_composer_view_form</field>
+        <field name="model">music.composer</field>
+        <field name="arch" type="xml">
+            <form string="_form">
+                <sheet>
+                    <field name="image_1920" widget="image" class="oe_avatar" options="{'zoom': true, 'preview_image': 'image_256'}"/>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" placeholder="Composer's Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <div class="oe_title">
+                            <label for="description" class="oe_edit_only"/>
+                            <field name="description"/>
+                        </div>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+</odoo>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sheet_music_action" model="ir.actions.act_window">
+        <field name="name">Sheet Music</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sheet.music</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="music_composer_action" model="ir.actions.act_window">
+        <field name="name">Music Composer</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">music.composer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="music_category_action" model="ir.actions.act_window">
+        <field name="name">Music Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">music.category</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="category_classical" model="music.category">
+            <field name="name">Classical</field>
+        </record>
+
+        <record id="category_pop" model="music.category">
+            <field name="name">Pop</field>
+        </record>
+
+        <record id="category_jazz" model="music.category">
+            <field name="name">Jazz</field>
+        </record>
+
+        <record id="category_anime" model="music.category">
+            <field name="name">Anime</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="music_category_view_tree" model="ir.ui.view">
+        <field name="name">music_category_view_tree</field>
+        <field name="model">music.category</field>
+        <field name="arch" type="xml">
+            <tree string="music_category_tree" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

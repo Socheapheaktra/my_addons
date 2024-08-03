@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="composer_chopin" model="music.composer">
+            <field name="name">Frederic Chopin</field>
+            <field name="image_1920" type="base64" file="sheet_music/static/src/img/Chopin.jpg"/>
+            <field name="description">Frédéric Chopin, born Fryderyk Franciszek Chopin on March 1, 1810, in Żelazowa Wola, near Warsaw, Duchy of Warsaw (now in Poland), was a Polish-French composer and pianist of the Romantic period. He is renowned for his expressive piano playing and the innovative works he composed for that instrument. Chopin's contributions to music are significant, particularly in the realm of solo piano compositions, which include mazurkas, waltzes, nocturnes, polonaises, ballades, études, impromptus, scherzos, preludes, and sonatas. Despite his relatively small output due to his focus on quality over quantity, Chopin's work is celebrated for its poetic genius and technical mastery, influencing countless musicians and composers who followed him.</field>
+        </record>
+
+        <record id="composer_liszt" model="music.composer">
+            <field name="name">Franz Liszt</field>
+            <field name="image_1920" type="base64" file="sheet_music/static/src/img/Liszt.jpg"/>
+            <field name="description">Franz Liszt, born on October 22, 1811, in Raiding, Hungary, was a renowned Hungarian composer, virtuoso pianist, and music teacher of the Romantic era. He is considered one of the greatest piano virtuosos of his generation and a pioneer in the development of modern piano technique. Liszt's music is known for its expressive depth and complexity, and he composed a wide variety of pieces, including symphonic poems, concertos, chamber music, and numerous songs.</field>
+        </record>
+
+    </data>
+</odoo>
