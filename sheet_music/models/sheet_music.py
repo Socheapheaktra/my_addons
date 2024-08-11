@@ -25,6 +25,9 @@ class SheetMusic(models.Model):
         string="File",
         attachment=False,
     )
+    youtube_link = fields.Char(
+        string="Youtube Link",
+    )
 
     @api.model
     def create(self, vals):

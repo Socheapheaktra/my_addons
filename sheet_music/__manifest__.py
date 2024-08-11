@@ -8,6 +8,8 @@
         - Add Sheet Music
         - Add Music Category
         - View Sheet Music
+    - Version 1.1.0:
+        - Add YouTube Link
     ''',
     'images': ['static/description/icon.png'],
     'category': 'Web',
@@ -28,4 +30,12 @@
     'application': True,
     'installable': True,
     'auto_install': False,
+    # 'external_dependencies': {
+    #     'python': [
+    #         'yt-dlp==2024.7.2',
+    #     ],
+    #     'bin': [
+    #         'ffmpeg'
+    #     ]
+    # }
 }

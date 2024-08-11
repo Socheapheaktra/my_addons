@@ -21,5 +21,6 @@ class SheetMusicController(Controller):
                 id=id,
             )
             return response
-        except Exception:
+        except Exception as error:
+            print(error)
             return request.not_found()
