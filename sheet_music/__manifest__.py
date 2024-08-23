@@ -10,6 +10,7 @@
         - View Sheet Music
     - Version 1.1.0:
         - Add YouTube Link
+        - Add Download Button (Download Mp4 From YoutubeLink)
     ''',
     'images': ['static/description/icon.png'],
     'category': 'Web',
@@ -30,12 +31,12 @@
     'application': True,
     'installable': True,
     'auto_install': False,
-    # 'external_dependencies': {
-    #     'python': [
-    #         'yt-dlp==2024.7.2',
-    #     ],
-    #     'bin': [
-    #         'ffmpeg'
-    #     ]
-    # }
+    'external_dependencies': {
+        'python': [
+            'yt-dlp==2024.7.2',
+        ],
+        'bin': [
+            'ffmpeg'
+        ]
+    }
 }

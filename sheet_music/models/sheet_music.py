@@ -54,3 +54,13 @@ class SheetMusic(models.Model):
         }
 
         return action
+
+    def action_download(self):
+        self.ensure_one()
+        action = {
+            "type": "ir.actions.act_url",
+            "url": f"/sheet_music/{self.id}/download",
+            "target": "new"
+        }
+
+        return action
