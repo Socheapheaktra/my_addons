@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 8AM-5PM (8:00-12:00, 13:00-17:00) -->
+        <record id="working_time_attendance_01_0" model="resource.calendar.attendance">
+            <field name="name">Monday Morning</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_1" model="resource.calendar.attendance">
+            <field name="name">Monday Afternoon</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_2" model="resource.calendar.attendance">
+            <field name="name">Tuesday Morning</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_3" model="resource.calendar.attendance">
+            <field name="name">Tuesday Afternoon</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_4" model="resource.calendar.attendance">
+            <field name="name">Wednesday Morning</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_5" model="resource.calendar.attendance">
+            <field name="name">Wednesday Afternoon</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_6" model="resource.calendar.attendance">
+            <field name="name">Thursday Morning</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_7" model="resource.calendar.attendance">
+            <field name="name">Thursday Afternoon</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_8" model="resource.calendar.attendance">
+            <field name="name">Friday Morning</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+        <record id="working_time_attendance_01_9" model="resource.calendar.attendance">
+            <field name="name">Friday Afternoon</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_01"/>
+        </record>
+
+        <!-- 8AM-5PM (8:00-17:00) -->
+        <record id="working_time_attendance_02_0" model="resource.calendar.attendance">
+            <field name="name">Monday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">12.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_02"/>
+        </record>
+        <record id="working_time_attendance_02_1" model="resource.calendar.attendance">
+            <field name="name">Tuesday</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">12.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_02"/>
+        </record>
+        <record id="working_time_attendance_02_2" model="resource.calendar.attendance">
+            <field name="name">Wednesday</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">12.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_02"/>
+        </record>
+        <record id="working_time_attendance_02_3" model="resource.calendar.attendance">
+            <field name="name">Thursday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">12.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_02"/>
+        </record>
+        <record id="working_time_attendance_02_4" model="resource.calendar.attendance">
+            <field name="name">Friday</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">12.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_02"/>
+        </record>
+
+        <!-- 9AM-5PM (9:00-12:00, 12:00-17:00) -->
+        <record id="working_time_attendance_03_0" model="resource.calendar.attendance">
+            <field name="name">Monday Morning</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">13.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_1" model="resource.calendar.attendance">
+            <field name="name">Monday Afternoon</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_2" model="resource.calendar.attendance">
+            <field name="name">Tuesday Morning</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">13.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_3" model="resource.calendar.attendance">
+            <field name="name">Tuesday Afternoon</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_4" model="resource.calendar.attendance">
+            <field name="name">Wednesday Morning</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_5" model="resource.calendar.attendance">
+            <field name="name">Wednesday Afternoon</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_6" model="resource.calendar.attendance">
+            <field name="name">Thursday Morning</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_7" model="resource.calendar.attendance">
+            <field name="name">Thursday Afternoon</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_8" model="resource.calendar.attendance">
+            <field name="name">Friday Morning</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">12.0</field>
+            <field name="day_period">morning</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+        <record id="working_time_attendance_03_9" model="resource.calendar.attendance">
+            <field name="name">Friday Afternoon</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_03"/>
+        </record>
+
+        <!-- 9AM-5PM (9:00-17:00) -->
+        <record id="working_time_attendance_04_0" model="resource.calendar.attendance">
+            <field name="name">Monday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">13.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_04"/>
+        </record>
+        <record id="working_time_attendance_04_1" model="resource.calendar.attendance">
+            <field name="name">Tuesday</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">13.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_04"/>
+        </record>
+        <record id="working_time_attendance_04_2" model="resource.calendar.attendance">
+            <field name="name">Wednesday</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">13.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_04"/>
+        </record>
+        <record id="working_time_attendance_04_3" model="resource.calendar.attendance">
+            <field name="name">Thursday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">8.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">13.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_04"/>
+        </record>
+        <record id="working_time_attendance_04_4" model="resource.calendar.attendance">
+            <field name="name">Friday</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">9.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">13.0</field>
+            <field name="break_to">13.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_04"/>
+        </record>
+
+        <!-- 1PM-10PM (13:00-17:00, 18:00-22:00) -->
+        <record id="working_time_attendance_05_0" model="resource.calendar.attendance">
+            <field name="name">Monday Afternoon</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_1" model="resource.calendar.attendance">
+            <field name="name">Monday Evening</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_2" model="resource.calendar.attendance">
+            <field name="name">Tuesday Afternoon</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_3" model="resource.calendar.attendance">
+            <field name="name">Tuesday Evening</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_4" model="resource.calendar.attendance">
+            <field name="name">Wednesday Afternoon</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_5" model="resource.calendar.attendance">
+            <field name="name">Wednesday Evening</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_6" model="resource.calendar.attendance">
+            <field name="name">Thursday Afternoon</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_7" model="resource.calendar.attendance">
+            <field name="name">Thursday Evening</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_8" model="resource.calendar.attendance">
+            <field name="name">Friday Afternoon</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">17.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+        <record id="working_time_attendance_05_9" model="resource.calendar.attendance">
+            <field name="name">Friday Evening</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_05"/>
+        </record>
+
+        <!-- 1PM-10PM (13:00-22:00) -->
+        <record id="working_time_attendance_06_0" model="resource.calendar.attendance">
+            <field name="name">Monday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_06"/>
+        </record>
+        <record id="working_time_attendance_06_1" model="resource.calendar.attendance">
+            <field name="name">Tuesday</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_06"/>
+        </record>
+        <record id="working_time_attendance_06_2" model="resource.calendar.attendance">
+            <field name="name">Wednesday</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_06"/>
+        </record>
+        <record id="working_time_attendance_06_3" model="resource.calendar.attendance">
+            <field name="name">Thursday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_06"/>
+        </record>
+        <record id="working_time_attendance_06_4" model="resource.calendar.attendance">
+            <field name="name">Friday</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">13.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_06"/>
+        </record>
+
+        <!-- 2PM-10PM (14:00-18:00, 18:00-22:00) -->
+        <record id="working_time_attendance_07_0" model="resource.calendar.attendance">
+            <field name="name">Monday Afternoon</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">18.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_1" model="resource.calendar.attendance">
+            <field name="name">Monday Evening</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_2" model="resource.calendar.attendance">
+            <field name="name">Tuesday Afternoon</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">18.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_3" model="resource.calendar.attendance">
+            <field name="name">Tuesday Evening</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_4" model="resource.calendar.attendance">
+            <field name="name">Wednesday Afternoon</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">18.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_5" model="resource.calendar.attendance">
+            <field name="name">Wednesday Evening</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_6" model="resource.calendar.attendance">
+            <field name="name">Thursday Afternoon</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">18.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_7" model="resource.calendar.attendance">
+            <field name="name">Thursday Evening</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_8" model="resource.calendar.attendance">
+            <field name="name">Friday Afternoon</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">18.0</field>
+            <field name="day_period">afternoon</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+        <record id="working_time_attendance_07_9" model="resource.calendar.attendance">
+            <field name="name">Friday Evening</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">18.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">evening</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_07"/>
+        </record>
+
+        <!-- 2PM-10PM (14:00-22:00) -->
+        <record id="working_time_attendance_08_0" model="resource.calendar.attendance">
+            <field name="name">Monday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_08"/>
+        </record>
+        <record id="working_time_attendance_08_1" model="resource.calendar.attendance">
+            <field name="name">Tuesday</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_08"/>
+        </record>
+        <record id="working_time_attendance_08_2" model="resource.calendar.attendance">
+            <field name="name">Wednesday</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_08"/>
+        </record>
+        <record id="working_time_attendance_08_3" model="resource.calendar.attendance">
+            <field name="name">Thursday</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_08"/>
+        </record>
+        <record id="working_time_attendance_08_4" model="resource.calendar.attendance">
+            <field name="name">Friday</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">14.0</field>
+            <field name="hour_to">22.0</field>
+            <field name="day_period">full_day</field>
+            <field name="break_from">18.0</field>
+            <field name="break_to">18.0</field>
+            <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+            <field name="calendar_id" ref="working_time_08"/>
+        </record>
+
+    </data>
+</odoo>

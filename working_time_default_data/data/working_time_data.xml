@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!-- 8AM-5PM (8:00-12:00, 13:00-17:00) -->
+        <record id="working_time_01" model="resource.calendar">
+            <field name="name">8AM-5PM (8:00-12:00, 13:00-17:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 8AM-5PM (8:00-17:00) -->
+        <record id="working_time_02" model="resource.calendar">
+            <field name="name">8AM-5PM (8:00-17:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 9AM-5PM (9:00-12:00, 12:00-17:00) -->
+        <record id="working_time_03" model="resource.calendar">
+            <field name="name">9AM-5PM (9:00-12:00, 12:00-17:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 9AM-5PM (9:00-17:00) -->
+        <record id="working_time_04" model="resource.calendar">
+            <field name="name">9AM-5PM (9:00-17:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 1PM-10PM (13:00-17:00, 18:00-22:00) -->
+        <record id="working_time_05" model="resource.calendar">
+            <field name="name">1PM-10PM (13:00-17:00, 18:00-22:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 1PM-10PM (13:00-22:00) -->
+        <record id="working_time_06" model="resource.calendar">
+            <field name="name">1PM-10PM (13:00-22:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 2PM-10PM (14:00-18:00, 18:00-22:00) -->
+        <record id="working_time_07" model="resource.calendar">
+            <field name="name">2PM-10PM (14:00-18:00, 18:00-22:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+        <!-- 2PM-10PM (14:00-22:00) -->
+        <record id="working_time_08" model="resource.calendar">
+            <field name="name">2PM-10PM (14:00-22:00)</field>
+            <field name="company_id" eval="False"/>
+            <field name="full_time_required_hours">40</field>
+            <field name="hours_per_day">8</field>
+            <field name="tz">Asia/Phnom_Penh</field>
+        </record>
+
+    </data>
+</odoo>
