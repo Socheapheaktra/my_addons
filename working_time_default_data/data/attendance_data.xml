@@ -8,6 +8,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -17,6 +19,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -26,6 +30,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -35,6 +41,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -44,6 +52,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -53,6 +63,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -62,6 +74,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -71,6 +85,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -80,6 +96,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -89,6 +107,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_01"/>
@@ -157,6 +177,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">9.0</field>
             <field name="hour_to">13.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -166,6 +188,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -175,6 +199,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">9.0</field>
             <field name="hour_to">13.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -184,6 +210,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -193,6 +221,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">9.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -202,6 +232,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -211,6 +243,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">9.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -220,6 +254,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -229,6 +265,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">9.0</field>
             <field name="hour_to">12.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">morning</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -238,6 +276,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_03"/>
@@ -306,6 +346,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -315,6 +357,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -324,6 +368,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -333,6 +379,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -342,6 +390,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -351,6 +401,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -360,6 +412,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -369,6 +423,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -378,6 +434,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">13.0</field>
             <field name="hour_to">17.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -387,6 +445,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_05"/>
@@ -455,6 +515,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">14.0</field>
             <field name="hour_to">18.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -464,6 +526,8 @@
             <field name="dayofweek">0</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -473,6 +537,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">14.0</field>
             <field name="hour_to">18.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -482,6 +548,8 @@
             <field name="dayofweek">1</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -491,6 +559,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">14.0</field>
             <field name="hour_to">18.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -500,6 +570,8 @@
             <field name="dayofweek">2</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -509,6 +581,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">14.0</field>
             <field name="hour_to">18.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -518,6 +592,8 @@
             <field name="dayofweek">3</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -527,6 +603,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">14.0</field>
             <field name="hour_to">18.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">afternoon</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
@@ -536,6 +614,8 @@
             <field name="dayofweek">4</field>
             <field name="hour_from">18.0</field>
             <field name="hour_to">22.0</field>
+            <field name="break_from">0</field>
+            <feild name="break_to">0</feild>
             <field name="day_period">evening</field>
             <field name="work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
             <field name="calendar_id" ref="working_time_07"/>
