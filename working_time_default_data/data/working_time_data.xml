@@ -74,5 +74,19 @@
             <field name="tz">Asia/Phnom_Penh</field>
         </record>
 
+        <function name="write" model="resource.calendar">
+            <value eval="[
+            ref('working_time_default_data.working_time_01'),
+            ref('working_time_default_data.working_time_02'),
+            ref('working_time_default_data.working_time_03'),
+            ref('working_time_default_data.working_time_04'),
+            ref('working_time_default_data.working_time_05'),
+            ref('working_time_default_data.working_time_06'),
+            ref('working_time_default_data.working_time_07'),
+            ref('working_time_default_data.working_time_08'),
+            ]"/>
+            <value eval="{'attendance_ids': [(5, 0, 0)]}"/>
+        </function>
+
     </data>
 </odoo>
