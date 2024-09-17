@@ -150,7 +150,7 @@
         </record>
         <record id="working_time_attendance_02_3" model="resource.calendar.attendance">
             <field name="name">Thursday</field>
-            <field name="dayofweek">4</field>
+            <field name="dayofweek">3</field>
             <field name="hour_from">8.0</field>
             <field name="hour_to">17.0</field>
             <field name="day_period">full_day</field>
