@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+stakeholder_access_global,Stakeholder Access,model_stakeholder,,1,1,1,1
+person_in_charge_access_global,Person In Charge Access,model_person_in_charge,,1,1,1,1
+todo_list_access_global,Todo List Access,model_todo_list,,1,1,1,1

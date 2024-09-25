@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="person_in_charge_view_tree" model="ir.ui.view">
+        <field name="name">person_in_charge_view_tree</field>
+        <field name="model">person.in.charge</field>
+        <field name="arch" type="xml">
+            <tree string="person_in_charge_tree" editable="bottom">
+                <field name="name"/>
+                <field name="type" widget="selection"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="person_in_charge_view_action" model="ir.actions.act_window">
+        <field name="name">Person In Charge</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">person.in.charge</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="todo_list_configuration_menu_root" name="Configuration" parent="todo_list_menu_root" sequence="3"/>
+    <menuitem id="todo_list_person_in_charge_menu" name="Person In Charge" parent="todo_list_configuration_menu_root" action="person_in_charge_view_action" sequence="1"/>
+</odoo>

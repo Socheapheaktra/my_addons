@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="seq_todo_list_bug" model="ir.sequence">
+            <field name="name">Todo List Bug</field>
+            <field name="code">todo.list.bug</field>
+            <field name="prefix">BUG</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_todo_list_feat" model="ir.sequence">
+            <field name="name">Todo List Feature</field>
+            <field name="code">todo.list.feat</field>
+            <field name="prefix">FEAT</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_todo_list_imp" model="ir.sequence">
+            <field name="name">Todo List Improvment</field>
+            <field name="code">todo.list.imp</field>
+            <field name="prefix">IMP</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <record id="seq_todo_list_other" model="ir.sequence">
+            <field name="name">Todo List Other</field>
+            <field name="code">todo.list.other</field>
+            <field name="prefix">OT</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

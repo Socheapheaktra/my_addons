@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="todo_list_view_tree" model="ir.ui.view">
+        <field name="name">todo_list_view_tree</field>
+        <field name="model">todo.list</field>
+        <field name="arch" type="xml">
+            <tree string="todo_list_tree">
+                <field name="name"/>
+                <field name="title"/>
+                <field name="description"/>
+                <field name="deadline" widget="date"/>
+                <field name="product_owner_id"/>
+                <field name="stakeholder_ids" widget="many2many"/>
+                <field name="type" widget="badge"/>
+                <field name="state" widget="badge"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="todo_list_view_form" model="ir.ui.view">
+        <field name="name">todo_list_view_form</field>
+        <field name="model">todo.list</field>
+        <field name="arch" type="xml">
+            <form string="todo_list_form">
+                <header>
+                    <button name="reset_to_draft" states="submit" string="Reset to Draft" class="btn-secondary" type="object"/>
+                    <button name="submit" states="draft" string="Submit" class="btn-primary" type="object"/>
+                    <button name="set_to_progress" states="submit" string="Confirm" class="btn-primary" type="object"/>
+                    <button name="mark_as_done" states="open" string="Mark as Done" class="btn-primary" type="object"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="title"/>
+                            <field name="description" widget="text"/>
+                        </group>
+                        <group>
+                            <field name="type" widget="selection_badge"/>
+                            <field name="product_owner_id"/>
+                            <field name="developer_id"/>
+                            <field name="deadline" widget="date"/>
+                            <field name="stakeholder_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="todo_list_view_action" model="ir.actions.act_window">
+        <field name="name">Todo List</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">todo.list</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="todo_list_menu_root" name="Todo List" sequence="1" action="todo_list_view_action"/>
+    <menuitem id="todo_list_menu" name="Todo List" sequence="1" parent="todo_list_menu_root" action="todo_list_view_action"/>
+
+</odoo>
