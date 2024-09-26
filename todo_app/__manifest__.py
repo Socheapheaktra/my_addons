@@ -1,6 +1,6 @@
 {
     'name': 'To-Do Application',
-    'version': '14.0.0',
+    'version': '14.1.0',
     'summary': 'Helps you Organize your Tasks',
     'description': '''
     This is my custom To-Do Application to keep myself Organize with all the tasks assigned by Product Owner to my team.
@@ -9,6 +9,8 @@
         - Add Stakeholder (Client)
         - Add Task Responsible (Person in charge of each Task)
         - Add Task Menu
+    - Version 14.1.0
+        - Add Task Log
     ''',
     'images': ['static/description/icon.png'],
     'data': [

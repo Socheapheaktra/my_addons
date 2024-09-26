@@ -60,6 +60,11 @@ class ToDoList(models.Model):
         string="Mark as Complete",
         default=False,
     )
+    task_log_ids = fields.One2many(
+        string="Task Logs",
+        comodel_name="task.log",
+        inverse_name="todo_id",
+    )
 
     @api.model
     def create(self, vals):

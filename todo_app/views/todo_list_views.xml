@@ -49,6 +49,14 @@
                             <field name="stakeholder_ids" widget="many2many_tags"/>
                         </group>
                     </group>
+
+                    <notebook>
+                        <page name="task_logs" string="Task Logs">
+                            <field name="task_log_ids">
+                                <field name="name"/>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
