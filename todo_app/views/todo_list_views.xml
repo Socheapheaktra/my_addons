@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="todo_list_view-search" model="ir.ui.view">
+        <field name="name">Search List</field>
+        <field name="model">todo.list</field>
+        <field name="arch" type="xml">
+            <search string="Task">
+                <field name="name" string="Reference"/>
+                <field name="title" string="Title"/>
+                <filter name="task_completed" string="Completed" domain="[('is_complete', '=', True)]"/>
+                <filter name="task_pending" string="Pending" domain="[('is_complete', '=', False)]"/>
+            </search>
+        </field>
+    </record>
+
     <record id="todo_list_view_tree" model="ir.ui.view">
         <field name="name">todo_list_view_tree</field>
         <field name="model">todo.list</field>
@@ -11,7 +24,7 @@
                 <field name="description"/>
                 <field name="deadline" widget="date"/>
                 <field name="product_owner_id"/>
-                <field name="stakeholder_ids" widget="many2many"/>
+                <field name="stakeholder_ids" widget="many2many_tags"/>
                 <field name="type" widget="badge"/>
                 <field name="state" widget="badge"/>
             </tree>
@@ -67,9 +80,20 @@
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">todo.list</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_complete', '=', False)]</field>
+    </record>
+
+    <record id="todo_list_all_view_action" model="ir.actions.act_window">
+        <field name="name">All Todo List</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">todo.list</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
     </record>
 
     <menuitem id="todo_list_menu_root" name="Todo List" sequence="1" action="todo_list_view_action"/>
-    <menuitem id="todo_list_menu" name="Todo List" sequence="1" parent="todo_list_menu_root" action="todo_list_view_action"/>
+    <menuitem id="todo_list_menu" name="Todo List" sequence="1" parent="todo_list_menu_root"/>
+    <menuitem id="todo_list_pending" name="Todo List" sequence="1" parent="todo_list_menu" action="todo_list_view_action"/>
+    <menuitem id="todo_list_all" name="All Todo List" sequence="2" parent="todo_list_menu" action="todo_list_all_view_action"/>
 
 </odoo>
