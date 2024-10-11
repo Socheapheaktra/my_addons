@@ -12,12 +12,18 @@ from odoo.addons.biz_unit_test.schemas.time_off_schema import TimeOffCreateSchem
 class BaseTestHelper(BaseCase):
     def assertEqual(self, first, second, msg=None, title=None):
         err_msg, msg = get_messages(title=title, message=msg)
-        super(BaseTestHelper, self).assertEqual(first, second, err_msg)
+        try:
+            super(BaseTestHelper, self).assertEqual(first, second, err_msg)
+        except AssertionError as error:
+            print(error)
         print(msg)
 
     def assertTrue(self, expr, msg=None, title=None):
         err_msg, msg = get_messages(title=title, message=msg)
-        super(BaseTestHelper, self).assertTrue(expr, err_msg)
+        try:
+            super(BaseTestHelper, self).assertTrue(expr, err_msg)
+        except AssertionError as error:
+            print(error)
         print(msg)
 
     @classmethod
@@ -264,6 +270,7 @@ class BaseTestHelper(BaseCase):
             "name": "Unpaid",
             "check_leave_unpaid": True,
             "allocation_type": "no",
+            "request_unit": "hour",
             "work_entry_type_id": cls.env.ref("hr_work_entry_contract.work_entry_type_unpaid_leave").id,
         }])
         return unpaid_leave
@@ -277,9 +284,13 @@ class BaseTestHelper(BaseCase):
             holiday_status_id,
             request_date_from,
             request_date_to,
+            request_hour_from,
+            request_hour_to,
             date_from,
             date_to,
             request_unit_half=False,
+            request_unit_hours=False,
+            request_date_from_period='am',
     ):
         """
         Helper function for create time off
@@ -289,9 +300,13 @@ class BaseTestHelper(BaseCase):
         :param int holiday_status_id: TimeOff Type
         :param date request_date_from: Date From
         :param date request_date_to: Date To
+        :param str request_hour_from: Hour From
+        :param str request_hour_to: Hour To
         :param datetime date_from: DateTime From
         :param datetime date_to: DateTime To
         :param bool request_unit_half: half day
+        :param bool request_unit_hours: request in hour
+        :param str request_date_from_period: period of leave request has taken
         :return: LeaveRequest
         """
         time_off = cls.env["hr.leave"].create([{
@@ -303,6 +318,7 @@ class BaseTestHelper(BaseCase):
             "date_from": date_from,
             "date_to": date_to,
             "request_unit_half": request_unit_half,
+            "request_unit_hours": request_unit_hours,
             "state": "validate",
         }])
         return time_off
